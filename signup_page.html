@@ -51,7 +51,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 65vh;
+            height: 100vh;
             margin: 0;
         }
 
@@ -128,7 +128,7 @@
 <body>
 <div id="navbar-placeholder"></div>
 
-    <script src="navbar_styles.js"></script>
+    <script src=" navbar_styles.js"></script>
 
      <div class="welcome-header">
  <h1> Sign Up</h1>
@@ -139,11 +139,23 @@
         <h2>Sign Up</h2>
         <form>
             <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="email" placeholder="Enter your name" required>
+            </div>
+             <div class="form-group">
+                <label for="number">Mobile Number</label>
+                <input type="number" id="email" placeholder="Enter your number" required>
+            </div>
+             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" id="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password">New Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+             <div class="form-group">
+                <label for="password">Confirm Password</label>
                 <input type="password" id="password" placeholder="Enter your password" required>
             </div>
             <button type="submit" class="login-btn">Create Account</button>
