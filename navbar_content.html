@@ -1,0 +1,46 @@
+<nav class="navbar">
+    <a href="/welcome.html" class="brand-logo">Web Technology</a>
+    
+    <div class="menu-toggle" id="menuToggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="/welcome_page.html">Home</a></li> 
+        <li><a href="https://muhammadessa-514.github.io/My-Personal-Portfolio/">My Portfolio</a></li> 
+        
+        <li>
+            <a href="#">Presentations</a>
+            <ul class="dropdown-menu">
+                <li style="min-width: auto;"><a href="/presentation_1login.html">Presentation 1</a></li>
+                <li style="min-width: auto;"><a href="/presentation_2admission.html">Presentation 2</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="assignments_list.html">Assignments</a> 
+            <ul class="dropdown-menu">
+                <li style="min-width: auto;"><a href="/Assignment_1.html">Assignment 1</a></li>
+                <li style="min-width: auto;"><a href="/Assignment_2bootsrap.html">Assignment 2</a></li>
+                <li style="min-width: auto;"><a href="/Assignment_3.html">Assignment 3</a></li>
+
+            </ul>
+        </li>
+        
+        <li><a href="/project.html">Semester Project</a></li>
+    </ul>
+</nav>
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    }
+</script>

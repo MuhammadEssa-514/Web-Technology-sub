@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .welcome-header {
+    text-align: center;
+    margin: 20px auto 30px auto; 
+    padding: 15px 20px;
+    /* background: radial-gradient( #126dae, #64b5de,#44a1ff); */
+    background: linear-gradient(70deg, rgb(0, 0, 0), #ff8c00ff, rgb(0, 0, 0),#ff8c00ff,rgb(0, 0, 0));
+
+    border-radius: 10px;
+    color: white;
+    max-width: 750px; 
+    /* width: 90%;  */
+}
+
+.welcome-header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    
+    border-bottom: 2px double #ffffff; 
+    display: inline-block; 
+    padding-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .welcome-header h1 {
+        font-size: 1.5rem; 
+    }
+    .welcome-header {
+        padding: 10px 15px;
+        margin: 2px;
+    }
+}
+
+        .loginsection {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px; 
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+      
+.login-btn {
+    background: linear-gradient(90deg, #ff8c00 0%, #000000 25%, #ff8c00 50%, #000000 75%, #ff8c00 100%);
+    background-size: 400% 100%;
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; 
+    transform: scale(1); 
+    transition: background-position 2s ease-in-out, transform 0.4s ease-out;
+}
+.login-btn:hover {
+    background-position: 100% 0; 
+    transform: scale(1.05); 
+}
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .footer-links a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div id="navbar-placeholder"></div>
+
+    <script src="navbar_styles.js"></script>
+
+     <div class="welcome-header">
+ <h1>Welcome To  Presentation 1 Login Form</h1>
+</div>
+
+   <section class="loginsection">
+     <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            
+            <div class="footer-links">
+                <a href="/forgetpassword.html">Forgot Password?</a>
+                 <a href="/signup_page.html">Sign Up</a>
+            </div>
+        </form>
+    </div>
+   </section>
+</body>
+</html>

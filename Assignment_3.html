@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        #box2 {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: lightgreen;
+        }
+
+        .containerr {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightgray;
+        }
+
+        .item {
+            background-color: steelblue;
+            color: white;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--=================================== Question 1================================================= -->
+    <h1>=============Question 1============</h1>
+    <!-- .......................................a....................................................... -->
+    <p><b>Q (a) Write the basic structure of an HTML5 document and briefly explain the purpose of each major tag used
+            ?</b></p>
+    <xmp style="color: green;">
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        < body>
+
+            < /body>
+
+        </html>
+    </xmp>
+    <p style="color: rgba(34, 34, 200, 0.806);">Ans (a) Three boxes will appear on the page. </p>
+    <br>
+    <ol style="color: rgba(34, 34, 200, 0.806);">
+        <li>!DOCTYPE html .....Tell the browser that this is an HTML5 document.</li>
+        <li>html.............................the main container of whole page</li>
+        <li>head.............................hold page info not shown on screen</li>
+        <li>title...............................show the page name of the bwowser tab</li>
+        <li>body............................ cotain all content which we see on the page</li>
+    </ol>
+    <!-- .......................................b....................................................... -->
+    <p><b>Q (b) What is the difference between the <xmp>
+                <div> and <span>
+            </xmp> tags in HTML? Give one example where each is preferred.Which is ususally for small text parts or
+            inline styling ?</b></p>
+    <ul style="color: rgba(34, 34, 200, 0.806);">
+        <li>Div tag ==== Block-level element, Used to group large sections or blocks of content. It starts on a new
+            line.
+        </li>
+        <xmp style="color: green;">
+            <div style="background-color: lightblue; padding: 10px;">
+                <h2>Welcome</h2>
+                <p>This is a section made with a div tag.</p>
+            </div>
+        </xmp>
+
+        <li>Span Tag === Inline element, Used to style or mark a small part of text or content within a line. It does
+            not start a new line.Which is usually for small text parts or inline styling</li>
+        <xmp>
+            <p>This is a <span style="color: red;">red word</span> inside a sentence.</p>
+        </xmp>
+    </ul>
+    <p>This is a <span style="color: red;">red word</span> inside a sentence.</p>
+
+    <!--=================================== Question 2================================================= -->
+    <!-- .......................................a....................................................... -->
+
+    <h1>=============Question 2============</h1>
+    <p><b>Q (a) . Explain the difference between the following CSS selectors with examples: ?</b></p>
+    <ul style="color: rgba(34, 34, 200, 0.806);">
+        <li>Element selector===It is used to style all HTML elements of the same type, like all paragraphs or all
+            headings. select by (tag).</li>
+        <li>Class selector=====It is used to style many elements that share the same class name. It allows you to apply
+            the same style <br> to multiple elements.select by (.).</li>
+        <li>ID selector=======It is used to style one unique element on a page. Each ID should be used only once.select
+            by (#).</li>
+    </ul>
+
+    <!-- .......................................b....................................................... -->
+
+    <p><b>Q (b) .What is the difference between display: inline;, display: block; and display: inline-block;? ?</b></p>
+    <ul style="color: rgba(34, 34, 200, 0.806);">
+        <li>display: inline=====The element appears in the same line with others and does not start a new line.</li>
+        <li>display: block=====The element starts on a new line and takes the full width available.</li>
+        <li>display:inline-block==The element stays in line with others but allows you to set its width and height.</li>
+    </ul>
+
+    <!--=================================== Question 3================================================= -->
+
+    <h1>=============Question 3============</h1>
+    <!-- .......................................a....................................................... -->
+
+    <p><b>Q (a) how many boxes will appear on the page and what color they have ?</b></p>
+
+    <xmp style="color: green;">
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+                div {
+                    width: 100px;
+                    height: 100px;
+                    background-color: lightcoral;
+                    margin: 5px;
+                    display: inline-block;
+                }
+
+                #box2 {
+                    position: relative;
+                    top: 10px;
+                    left: 20px;
+                    background-color: lightgreen;
+                }
+            </style>
+        </head>
+        < body>
+
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+
+            < /body>
+
+        </html>
+    </xmp>
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <!-- Question(a)-->
+    <!-- answera -->
+    <p style="color: rgba(34, 34, 200, 0.806);">Ans (a) Three boxes will appear on the page. <br>
+
+        Box 1 Light coral color <br>
+
+        Box 2 Light green color <br>
+
+        Box 3 Light coral color</p>
+    <!-- .......................................b....................................................... -->
+
+    <p><b>Q (b) Describe how the position of the second box (#box2) differ from the others ?</b></p>
+    <!-- answerB -->
+    <p style="color: rgba(34, 34, 200, 0.806);">Ans (b) The second box (#box2) is moved 10px down and 20px to the right
+        from its <br> normal position.
+        The other boxes (#box1 and #box3) remain in their normal positions.</p>
+    <!-- .......................................c....................................................... -->
+
+
+    <p><b>Q (c) What is the purpose of the position relative property here ?</b></p>
+    <!-- answerC -->
+    <p style="color: rgba(34, 34, 200, 0.806);">Ans (C) The position: relative property allows the box to be shifted
+        from its original <br> position using top,
+        left, right, or bottom, without affecting the layout of other elements.</p>
+
+    <!--=================================== Question 4================================================= -->
+
+
+    <section>
+        <h1>=============Question 4============</h1>
+
+        <!-- .......................................a....................................................... -->
+
+        <p><b>Q (a) what is flex box in css and why we used ? mention any two advantages?</b></p>
+        <!-- answera-->
+        <ol style="color: rgba(34, 34, 200, 0.806);">Ans (a)
+            <li>Responsive design: Flexbox automatically adjusts items to fit different screen sizes.</li>
+            <li>Easy alignment: You can center elements both vertically and horizontally with simple properties</li>
+        </ol>
+        <xmp>
+
+        </xmp>
+    </section>
+
+    <section>
+        <!-- .......................................b....................................................... -->
+
+        <p><b>Q (b) Predict and explane the layout output of the foloowing code?</b></p>
+        <xmp style="color: green;">
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <style>
+                    .containerr {
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: lightgray;
+                    }
+
+                    .item {
+                        background-color: steelblue;
+                        color: white;
+                        padding: 10px;
+
+                    }
+                </style>
+            </head>
+            < body>
+
+                <div class="containerr">
+                    <div class="item">Box1</div>
+                    <div class="item">box2</div>
+                    <div class="item">Box3</div>
+                </div>
+
+                < /body>
+
+            </html>
+        </xmp>
+
+        <!-- <div class="containerr">
+            <div class="item">Box1</div>
+            <div class="item">box2</div>
+            <div class="item">Box3</div>
+        </div> <br> -->
+
+        <!-- ya div wala code isliya comment kya ha taki uper div ko already css diya to confilict na ho jaye or ma na paper ma jo code ha same use kya ha siway is image ka -->
+        <img src="/images/flex_between.PNG" style="width: 100%;">
+        <!-- answerb-->
+        <p style="color: rgba(34, 34, 200, 0.806);"><br>
+            three blue boxes arranged horizontally in one row inside a light gray background containerr. <br>
+            arranged horizontally in one row inside a light gray background containerr. <br>
+            The text inside each box will be white and centered horizontally within each box. <br>
+            The background of each small box will be steel blue. <br>
+            The containerr background will be light gray. <br>
+
+        </p>
+    </section>
+    <br>
+    <!--=================================== Question 5================================================= -->
+
+
+    <section>
+        <h1>=============Question 5============</h1>
+        <!-- .......................................a....................................................... -->
+
+        <p><b>Q (a) Write two ways to include bootsrap in a webpage (CDN and local link)?</b></p>
+        <!-- answera-->
+        <ol style="color: rgba(34, 34, 200, 0.806);">Ans (a)
+            <li>we can include Bootstrap directly from the internet using a CDN link (css link and js link) from
+                bootstrap official website . cdn is easier and faster for testing</li>
+            <li>we can download Bootstrap and include it locally from your project folder.Local method is better if you
+                want to work offline or customize Bootstrap files.</li>
+        </ol>
+
+    </section><br>
+    <section>
+        <!-- .......................................a....................................................... -->
+        <p><b>Q (b) what is the visible output of the following bootsrap code?</b></p>
+        <ol>
+            <li>
+                <xmp style="color: green;"><button class="btn btn-primary">Login</button></xmp>
+            </li>
+            <li>
+                <xmp style="color: green;"><button class="btn btn-danger">Delete</button> </xmp>
+            </li>
+        </ol>
+        <button class="btn btn-primary">Login</button>
+        <button class="btn btn-danger">Delete</button>
+        <!-- answerb-->
+        <ol style="color: rgba(34, 34, 200, 0.806);">
+            <li>Login button with background color blue and text color is white</li>
+            <li>Delete button with background color Red and text color is white</li>
+        </ol>
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+
+</html>
